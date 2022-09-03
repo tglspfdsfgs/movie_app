@@ -1,0 +1,105 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  --primary-color: #22254b;
+  --secondary-color: #373b69;
+  --tertiary-color: #6078c5;
+  --high-score: lightgreen;
+  --medium-score: orange;
+  --low-score: red;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary-color);
+}
+
+.header {
+  height: 44px;
+  padding: 14px;
+  background-color: var(--secondary-color);
+}
+.header__search {
+  float: right;
+  height: 100%;
+  width: 200px;
+  box-sizing: border-box;
+  padding: 8px 16px 8px 16px;
+  background-color: var(--secondary-color);
+  border: 2px solid var(--primary-color);
+  border-radius: 25px;
+  outline: none;
+  color: white;
+}
+.header__search:focus {
+  background-color: var(--primary-color);
+}
+.header__search::placeholder {
+  color: var(--tertiary-color);
+}
+
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.movie {
+  width: 300px;
+  max-height: 550px;
+  margin: 16px;
+  overflow: hidden;
+  position: relative;
+  background-color: var(--secondary-color);
+  box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+.movie__info {
+  box-sizing: border-box;
+  padding: 8px 16px 16px 16px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.movie__title {
+  margin: 0;
+  padding-right: 15px;
+  color: white;
+  font-weight: bold;
+}
+.movie__score {
+  width: 25px;
+  height: 25px;
+  padding: 4px 8px 4px 8px;
+  box-sizing: content-box;
+  line-height: 1.5;
+  align-self: center;
+  color: var(--medium-score);
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-weight: bold;
+}
+.movie__score--low {
+  color: var(--low-score);
+}
+.movie__score--medium {
+  color: var(--medium-score);
+}
+.movie__score--high {
+  color: var(--high-score);
+}
+
+.overview {
+  position: absolute;
+  top: 550px;
+  transition: top 0.7s ease-in-out;
+  padding: 32px;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: auto;
+  line-height: 1.5;
+  background-color: white;
+}
+/*# sourceMappingURL=style.css.map */
